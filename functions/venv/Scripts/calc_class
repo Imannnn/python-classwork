@@ -1,0 +1,77 @@
+# A function that takes two integers and adds them together
+def add(num1, num2):
+    return num1 + num2
+
+# A function that takes two integers and subtracts the second from the first
+def subtract(num1, num2):
+    return num1 - num2
+
+# A function that takes two numbers and divides the first by the second
+def divide(num1, num2):
+    return num1 / num2
+
+# A function that multiplies two numbers together
+def multiply(num1, num2):
+    return num1 * num2
+
+# A menu function to present the calculator to the user and control the user's choices
+def calculator():
+    input1 = int(input("Welcome to my calculator! Enter your first number."))
+    operator = input("Enter your operator.")
+    input2 = int(input("Enter your second number."))
+    result = 0
+
+    if operator == "+":
+        result = add(input1, input2)
+    elif operator == "-":
+        result = subtract(input1, input2)
+    elif operator == "/":
+        result = divide(input1, input2)
+    else:
+        result = multiply(input1, input2)
+
+    return result
+
+#step 1
+class Calc:
+    # A function that takes two integers and adds them together
+    def add(num1, num2):
+        return num1 + num2
+
+    # A function that takes two integers and subtracts the second from the first
+    def subtract(num1, num2):
+        return num1 - num2
+
+    # A function that takes two numbers and divides the first by the second
+    def divide(num1, num2):
+        return num1 / num2
+
+    # A function that multiplies two numbers together
+    def multiply(num1, num2):
+        return num1 * num2
+
+    # A menu function to present the calculator to the user and control the user's choices
+    def calculator(self):
+        input1 = int(input("Welcome to my calculator! Enter your first number."))
+        operator = input("Enter your operator.")
+        input2 = int(input("Enter your second number."))
+        result = 0
+
+        if operator == "+":
+            result = add(input1, input2)
+        elif operator == "-":
+            result = subtract(input1, input2)
+        elif operator == "/":
+            result = divide(input1, input2)
+        else:
+            result = multiply(input1, input2)
+
+        return result
+
+
+print("The result is " + str(calculator()))
+
+
+calculator= calculator()
+print("The result is "+ str(calculator.calculator()))
+
